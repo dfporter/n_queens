@@ -5,11 +5,11 @@ import random, collections
 
 def ok(pos):
     
-    rows = [sum(x) for x in box]
+    rows = [sum(x) for x in pos]
     if np.any([x>1 for x in rows]):
         return False
     
-    cols = [sum(x) for x in box.T]
+    cols = [sum(x) for x in pos.T]
     if np.any([x>1 for x in cols]):
         return False
     
